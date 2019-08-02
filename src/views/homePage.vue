@@ -1,7 +1,7 @@
 <template>
     <v-app>
         <v-container>
-            <v-layout>
+            <v-layout >
                 <v-flex id="title">BRUTE FORCE</v-flex>
             </v-layout>
         </v-container>

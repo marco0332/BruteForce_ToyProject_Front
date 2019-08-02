@@ -5,13 +5,21 @@
         <v-content id="appContent">
             <router-view/>
         </v-content>
+
+        <Footer />
     </v-app>
 </template>
 
 <script>
+import Nav from "./components/Nav"
+import Footer from "./components/Footer"
+
 export default {
   name: 'App',
-  
+  components: {
+      Nav,
+      Footer
+  }
 }
 </script>
 
