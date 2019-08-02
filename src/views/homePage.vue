@@ -2,7 +2,7 @@
     <v-app>
         <v-container>
             <v-layout>
-                <v-flex>Hi! It is my First project using spring boot 2222222</v-flex>
+                <v-flex id="title">BRUTE FORCE</v-flex>
             </v-layout>
         </v-container>
     </v-app>
@@ -21,4 +21,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+#title {
+    text-align: center;
+}
 </style>
