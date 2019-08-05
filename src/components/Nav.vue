@@ -1,37 +1,4 @@
-<template>
-    <v-layout id='Nav'>
-        <!-- Logo, Title -->
-        <v-flex xs2 class="toFlex">
-            <v-flex class="verticalCenter toFlex">
-                <v-btn text to="/" id="toHomeBtn">
-                    <span id="Title">BRUTE FORCE</span>
-                </v-btn>
-            </v-flex>
 
-        </v-flex>
-
-        <!-- Search box -->
-        <v-flex xs7>
-            <SearchBar />
-        </v-flex>
-    </v-layout>
-</template>
-
-<script>
-import SearchBar from './SearchBar'
-
-export default {
-  name: 'Nav',
-  components: {
-    SearchBar
-  },
-  data () {
-    return {
-      bAuthentication: true
-    }
-  }
-}
-</script>
 
 <style scoped>
 #Nav {
