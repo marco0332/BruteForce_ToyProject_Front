@@ -1,9 +1,7 @@
 <template>
-    <v-container fill-height id='Footer'>
-        <v-layout align-center>
-            <v-flex text-xs-center style="text-align:center"><span>HAHA</span></v-flex>
-        </v-layout>
-    </v-container>
+    <v-layout align-center id='Footer'>
+        <v-flex><span>HAHA</span></v-flex>
+    </v-layout>
 </template>
 
 <script>
@@ -15,7 +13,10 @@ export default {
 <style>
 #Footer {
   background-color: darkolivegreen;
+  margin:0;
+  padding:0;
   width: 100vw;
   height: 64px;
+  text-align:center;
 }
 </style>

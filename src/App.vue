@@ -29,9 +29,4 @@ export default {
   background-color: white;
   padding-top: 64px;
 }
-
-#myContainer {
-  margin: 0;
-  padding: 0;
-}
 </style>

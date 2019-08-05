@@ -4,6 +4,8 @@ import Vue from 'vue'
 import Vuetify from 'vuetify'
 import App from './App'
 import router from './router'
+import 'vuetify/dist/vuetify.min.css'
+import 'font-awesome/css/font-awesome.min.css'
 
 Vue.config.productionTip = false
 Vue.use(Vuetify, {

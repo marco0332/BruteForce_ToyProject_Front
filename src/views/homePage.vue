@@ -9,8 +9,13 @@
 </template>
 
 <script>
+import SearchBar from '../components/SearchBar'
+
 export default {
   name: 'homePage',
+  components: {
+    SearchBar
+  },
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
