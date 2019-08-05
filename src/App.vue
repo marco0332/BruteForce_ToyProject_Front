@@ -1,37 +1,37 @@
 <template>
-    <v-app id="app">
+    <div id="myContainer">
         <Nav />
-
-        <v-content id="appContent">
-            <router-view/>
-        </v-content>
-
+        <div id="myApp">
+            <router-view />
+        </div>
         <Footer />
-    </v-app>
+    </div>
 </template>
 
 <script>
-import Nav from "./components/Nav"
-import Footer from "./components/Footer"
+import Nav from './components/Nav'
+import Footer from './components/Footer'
 
 export default {
   name: 'App',
   components: {
-      Nav,
-      Footer
+    Nav,
+    Footer
   }
 }
 </script>
 
 <style>
-#app {
+#myApp {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: white;
+  padding-top: 64px;
 }
 
-#appContent {
+#myContainer {
+  margin: 0;
   padding: 0;
 }
 </style>

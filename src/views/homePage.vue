@@ -1,11 +1,11 @@
 <template>
-    <v-app>
+    <div id="homePageApp">
         <v-container>
-            <v-layout >
-                <v-flex id="title">BRUTE FORCE</v-flex>
+            <v-layout align-center justify-center row fill-height>
+                <v-flex text-xs-center id="title"><span>BRUTE FORCE</span></v-flex>
             </v-layout>
         </v-container>
-    </v-app>
+    </div>
 </template>
 
 <script>
@@ -23,5 +23,13 @@ export default {
 <style scoped>
 #title {
     text-align: center;
+    align-items : center
+}
+
+#homePageApp {
+    height: 100vh;
+    background-color: red;
+    padding:0;
+    margin:0;
 }
 </style>
