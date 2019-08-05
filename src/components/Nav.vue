@@ -1,5 +1,5 @@
 <template>
-  <v-layout id='Nav'>
+  <v-layout id='Nav' style="z-index: 1;">
     <!-- Logo, Title -->
     <v-flex xs2 class="verticalCenter toFlex">
       <v-btn text to="/" id="toHomeBtn">
