@@ -29,16 +29,17 @@ export default {
 </script>
 
 <style>
-.v-label.theme--light {
+  .v-label.theme--light {
     right: auto!important;
-}
+  }
 
-.v-label--active {
+  .v-label--active {
     font-weight: bold;
-}
+  }
 
-.mySearchBox {
+  .mySearchBox {
     background-color: white;
     border-radius: 7px;
-}
+    width: 50vw;
+  }
 </style>
