@@ -1,32 +1,47 @@
 <template>
   <v-layout id='Nav'>
     <!-- Logo, Title -->
-    <v-flex xs2 class="toFlex">
-      <v-flex class="verticalCenter toFlex">
-        <v-btn text to="/" id="toHomeBtn">
-          <span id="Title">BRUTE FORCE</span>
-        </v-btn>
-      </v-flex>
+    <v-flex xs2 class="verticalCenter toFlex">
+      <v-btn text to="/" id="toHomeBtn">
+        <span id="Title">BRUTE FORCE</span>
+      </v-btn>
     </v-flex>
 
     <!-- Search box -->
-    <v-flex xs7>
-      <SearchBar />
+    <v-flex xs8 class="toFlex">
+      <v-flex class="verticalCenter toFlex">
+        <SearchBar />
+      </v-flex>
     </v-flex>
 
     <!--  Sign In Dialog  -->
-    <v-flex class="verticalCenter toFlex">
-      <v-dialog persistent hide-overlay scrollable v-model="signInDialog">
+    <v-flex xs1 class="verticalCenter toFlex">
+      <v-dialog persistent max-width="600px" v-model="signInDialog">
         <template v-slot:activator="{ on }">
-          <v-btn text v-on="on">Sign In</v-btn>
+          <v-btn text v-on="on" dark>Sign In</v-btn>
         </template>
         <v-card>
           <v-card-actions>
             <v-spacer></v-spacer>
             <v-btn text icon @click="signInDialog = false"><v-icon>fas fa-times</v-icon></v-btn>
           </v-card-actions>
-          <v-card-title>Sign In</v-card-title>
           <SignIn @SignIn="signInDialog = !signInDialog"></SignIn>
+        </v-card>
+      </v-dialog>
+    </v-flex>
+
+    <!--  Sign Up Dialog  -->
+    <v-flex xs2 class="verticalCenter toFlex">
+      <v-dialog persistent max-width="600px" v-model="signUpDialog">
+        <template v-slot:activator="{ on }">
+          <v-btn text v-on="on" dark>Sign Up</v-btn>
+        </template>
+        <v-card>
+          <v-card-actions>
+            <v-spacer></v-spacer>
+            <v-btn text icon @click="signUpDialog = false"><v-icon>fas fa-times</v-icon></v-btn>
+          </v-card-actions>
+          <SignUp @SignUp="signUpDialog = !signUpDialog"></SignUp>
         </v-card>
       </v-dialog>
     </v-flex>
@@ -48,7 +63,8 @@ export default {
   data () {
     return {
       bAuthentication: true,
-      signInDialog: false
+      signInDialog: false,
+      signUpDialog: false
     }
   }
 }

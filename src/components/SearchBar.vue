@@ -1,13 +1,13 @@
 <template>
-    <v-form>
-        <v-text-field class="mySearchBox v-input--is-focused"
-            outlined
-            append-icon="fa-search"
-            v-model="searchText"
-            hide-details
-            placeholder="Search"
-        ></v-text-field>
-    </v-form>
+  <v-form>
+    <v-text-field class="mySearchBox v-input--is-focused"
+                  outlined
+                  append-icon="fa-search"
+                  v-model="searchText"
+                  hide-details
+                  placeholder="Search"
+    ></v-text-field>
+  </v-form>
 </template>
 
 <script>
@@ -22,16 +22,17 @@ export default {
 </script>
 
 <style>
-.v-label.theme--light {
+  .v-label.theme--light {
     right: auto!important;
-}
+  }
 
-.v-label--active {
+  .v-label--active {
     font-weight: bold;
-}
+  }
 
-.mySearchBox {
+  .mySearchBox {
     background-color: white;
     border-radius: 7px;
-}
+    width: 50vw;
+  }
 </style>
