@@ -3,7 +3,7 @@
 <style scoped>
 #Nav {
   position: fixed;
-  background-color: blue;
+  background-color: transparent;
   width: 100vw;
   height: 64px;
 }

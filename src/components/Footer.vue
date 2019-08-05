@@ -12,7 +12,7 @@ export default {
 
 <style>
 #Footer {
-  background-color: darkolivegreen;
+  background-color: transparent;
   margin:0;
   padding:0;
   width: 100vw;
