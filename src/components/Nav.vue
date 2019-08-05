@@ -1,5 +1,5 @@
 <template>
-    <v-layout id='Nav'>
+    <v-layout id='Nav' class="backColorSetting">
         <!-- Logo, Title -->
         <v-flex xs2 class="toFlex">
             <v-flex class="verticalCenter toFlex">
@@ -36,7 +36,6 @@ export default {
 <style scoped>
 #Nav {
   position: fixed;
-  background-color: transparent;
   width: 100vw;
   height: 64px;
 }
