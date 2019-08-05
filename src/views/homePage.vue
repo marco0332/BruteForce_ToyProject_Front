@@ -1,8 +1,15 @@
 <template>
     <div id="homePageApp">
-        <v-container>
-            <v-layout align-center justify-center row fill-height>
-                <v-flex text-xs-center id="title"><span>BRUTE FORCE</span></v-flex>
+        <v-container fill-height>
+            <v-layout class="toFlex">
+                <v-flex xs10 class="toFlex verticalCenter">
+                    <v-layout column>
+                        <span id="mainTitle">
+                            BRUTE FORCE
+                        </span>
+                        <SearchBar />
+                    </v-layout>
+                </v-flex>
             </v-layout>
         </v-container>
     </div>
@@ -26,15 +33,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-#title {
-    text-align: center;
-    align-items : center
-}
-
 #homePageApp {
-    height: 100vh;
-    background-color: red;
-    padding:0;
-    margin:0;
+    height: calc(100vh - 128px); /* nav_64px, footer_64px */
+    background-color: transparent;
 }
 </style>

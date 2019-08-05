@@ -1,5 +1,5 @@
 <template>
-    <div id="myContainer">
+    <div class="backColorSetting">
         <Nav />
         <div id="myApp">
             <router-view />
@@ -26,7 +26,6 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: white;
   padding-top: 64px;
 }
 </style>
