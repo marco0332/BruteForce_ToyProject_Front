@@ -1,5 +1,5 @@
 <template>
-    <div class="backColorSetting">
+    <div>
         <Nav />
         <div id="myApp">
             <router-view />

@@ -1,5 +1,5 @@
 <template>
-    <div id="homePageApp">
+    <div id="homePageApp" class="backColorSetting">
         <v-container fill-height>
             <v-layout class="toFlex">
                 <v-flex xs10 class="toFlex verticalCenter">
@@ -22,11 +22,6 @@ export default {
   name: 'homePage',
   components: {
     SearchBar
-  },
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
   }
 }
 </script>
