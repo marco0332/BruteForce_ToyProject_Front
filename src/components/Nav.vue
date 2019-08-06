@@ -48,7 +48,7 @@
 
     <!--  User  -->
     <v-flex xs1 v-if="bAuthentication" class="verticalCenter toFlex">
-      <v-btn text dark :to="{name: 'userPage', params: {userId: userId, userName: userName}}">{{ userName }}</v-btn>
+      <v-btn  text dark :to="{name: 'userPage', params: {userId: userId}}">{{ userName }}</v-btn>
     </v-flex>
 
     <!--  Sign Out  -->
