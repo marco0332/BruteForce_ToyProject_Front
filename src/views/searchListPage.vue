@@ -16,14 +16,6 @@
             </v-layout>
 
             <hr style="border-top:1px solid rgb(28, 42, 165)" />
-            <!-- <v-layout v-for="question in questionList.slice(pageNum*questionsPerPage, (pageNum+1)*questionsPerPage-1)" :key="question.qid">
-                <v-container class="unitContent">
-                    <v-layout column>
-                        <v-flex v-text="question.score"></v-flex>
-                        <v-flex v-text="question.cntAnswer"></v-flex>
-                    </v-layout>
-                </v-container>
-            </v-layout> -->
             <searchListTable></searchListTable>
         </v-container>
     </div>
