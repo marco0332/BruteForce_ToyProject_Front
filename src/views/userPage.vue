@@ -47,7 +47,7 @@
           <v-card-text>
             <v-layout justify-space-between mb-4>
               <v-flex text-left>
-                <span class="display-3 font-weight-light" v-text="userForce"></span>
+                <span class="font-weight-light" style="font-size:60sp" v-text="userForce"></span>
                 <span class="subheading font-weight-light mr-1">FORCE</span>
 <!--                <v-fade-transition>-->
 <!--                  <v-avatar v-if="isPlaying" :color="color" :style="{animationDuration: animationDuration}"-->
@@ -60,10 +60,10 @@
 
             <v-slider readonly v-model="userForce" track-color="grey" min="0" max="100">
               <template v-slot:prepend>
-                <v-chip class="ma-2" text-color="white" style="color: indigo">P</v-chip>
+                <v-chip class="ma-2">P</v-chip>
               </template>
               <template v-slot:append>
-                <v-chip  class="ma-2" text-color="white" color="indigo">M</v-chip>
+                <v-chip  class="ma-2">M</v-chip>
               </template>
             </v-slider>
           </v-card-text>
@@ -111,5 +111,9 @@ export default {
 <style scoped>
 #userPageApp {
   height: calc(100vh - 128px); /* nav_64px, footer_64px */
+}
+
+.theme--light.v-chip {
+    color: white;
 }
 </style>
