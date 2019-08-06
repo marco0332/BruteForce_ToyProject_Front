@@ -1,12 +1,12 @@
 <template>
     <v-flex>
         <v-form @submit="mySubmit">
-            <v-text-field class="mySearchBox v-input--is-focused"
+            <v-text-field class="mySearchBoxMain v-input--is-focused"
                 outlined
                 append-icon="fa-search"
                 v-model="searchText"
                 hide-details
-                placeholder="Search"
+                placeholder="검색"
             ></v-text-field>
         </v-form>
     </v-flex>
@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'SearchBar',
+  name: 'SearchBarMain',
   data () {
     return {
       searchText: ''
@@ -37,9 +37,9 @@ export default {
     font-weight: bold;
   }
 
-  .mySearchBox {
+  .mySearchBoxMain {
     background-color: white;
     border-radius: 7px;
-    width: 50vw;
+    width: 80vw;
   }
 </style>
