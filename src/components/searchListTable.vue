@@ -34,6 +34,8 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   name: 'searchListTable',
   data () {
@@ -49,7 +51,10 @@ export default {
   },
   methods: {
     testQuestionList () {
-        this.questionList = this.$axios.get('/api/findAllQuestions');
+      axios.get('/api/findAllQuestions').then(itemList => {
+        this.questionList = itemList
+        console.log(itemList)
+      })
     },
     /** Question List를 불러와서 data 변수에 저장하는 메소드 */
     getQuestionList () {
@@ -452,7 +457,8 @@ export default {
       return Math.ceil(this.questionList.length / this.dataPerPage)
     },
     sliceData () {
-      return this.questionList.slice(this.startOffset, this.endOffset)
+      return this.questionList
+    //   return this.questionList.slice(this.startOffset, this.endOffset)
     }
   }
 }
