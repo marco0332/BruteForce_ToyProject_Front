@@ -1,5 +1,5 @@
 <template>
-    <v-flex>
+    <v-app>
         <v-list two-line id="questionVList">
 
             <v-list-item
@@ -26,12 +26,11 @@
         <v-pagination
             v-model="curPageNum"
             :length="numOfPages"
-            circle
-            prev-icon="mdi-menu-left"
-            next-icon="mdi-menu-right"
+            prev-icon="fa fa-caret-left"
+            next-icon="fa fa-caret-right"
         >
         </v-pagination>
-    </v-flex>
+    </v-app>
 </template>
 
 <script>
@@ -459,7 +458,8 @@ export default {
 #questionVList {
   padding: 0;
 }
-.v-pagination__item.v-pagination__item--active{
+.v-pagination__item--active .primary{
     background-color: #1976d2!important;
+    border: 15px solid black;
 }
 </style>
