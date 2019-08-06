@@ -1,7 +1,7 @@
 <template>
-  <v-layout id='Nav' style="z-index: 1;">
+  <v-layout id='Nav' style="z-index: 1;" class="backColorSetting">
     <!-- Logo, Title -->
-    <v-flex xs2 class="verticalCenter toFlex">
+    <v-flex xs3 class="verticalCenter toFlex">
       <v-btn text to="/" id="toHomeBtn">
         <span id="Title">BRUTE FORCE</span>
       </v-btn>
@@ -15,7 +15,7 @@
     </v-flex>
 
     <!--  Sign In Dialog  -->
-    <v-flex xs1 class="verticalCenter toFlex">
+    <v-flex xs1 v-if="!bAuthentication" class="verticalCenter toFlex">
       <v-dialog persistent max-width="600px" v-model="signInDialog">
         <template v-slot:activator="{ on }">
           <v-btn text v-on="on" dark>Sign In</v-btn>
@@ -31,7 +31,7 @@
     </v-flex>
 
     <!--  Sign Up Dialog  -->
-    <v-flex xs2 class="verticalCenter toFlex">
+    <v-flex xs2 v-if="!bAuthentication" class="verticalCenter toFlex">
       <v-dialog persistent max-width="600px" v-model="signUpDialog">
         <template v-slot:activator="{ on }">
           <v-btn text v-on="on" dark>Sign Up</v-btn>
@@ -44,6 +44,16 @@
           <SignUp @SignUp="signUpDialog = !signUpDialog"></SignUp>
         </v-card>
       </v-dialog>
+    </v-flex>
+
+    <!--  User  -->
+    <v-flex xs1 v-if="bAuthentication" class="verticalCenter toFlex">
+      <v-btn flat text dark :to="{name: 'userPage', params: {userId: userId, userName: userName}}">{{ userName }}</v-btn>
+    </v-flex>
+
+    <!--  Sign Out  -->
+    <v-flex xs2 v-if="bAuthentication" class="verticalCenter toFlex">
+      <v-btn text dark @click="signOut">Sign Out</v-btn>
     </v-flex>
   </v-layout>
 </template>
@@ -64,7 +74,13 @@ export default {
     return {
       bAuthentication: true,
       signInDialog: false,
-      signUpDialog: false
+      signUpDialog: false,
+      userName: 'BruteForce',
+      userId: '1'
+    }
+  },
+  methods: {
+    signOut () {
     }
   }
 }
