@@ -7,7 +7,7 @@
                         <span id="mainTitle">
                             BRUTE FORCE
                         </span>
-                        <SearchBar />
+                        <SearchBarMain />
                     </v-layout>
                 </v-flex>
             </v-layout>
@@ -16,12 +16,12 @@
 </template>
 
 <script>
-import SearchBar from '../components/SearchBar'
+import SearchBarMain from '../components/SearchBarMain'
 
 export default {
   name: 'homePage',
   components: {
-    SearchBar
+    SearchBarMain
   }
 }
 </script>

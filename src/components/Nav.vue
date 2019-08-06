@@ -10,7 +10,7 @@
     <!-- Search box -->
     <v-flex xs8 class="toFlex">
       <v-flex class="verticalCenter toFlex">
-        <SearchBar />
+        <SearchBarNav />
       </v-flex>
     </v-flex>
 
@@ -18,7 +18,7 @@
     <v-flex xs1 v-if="!bAuthentication" class="verticalCenter toFlex">
       <v-dialog persistent max-width="600px" v-model="signInDialog">
         <template v-slot:activator="{ on }">
-          <v-btn text v-on="on" dark>Sign In</v-btn>
+          <v-btn text v-on="on" dark>로그인</v-btn>
         </template>
         <v-card>
           <v-card-actions>
@@ -34,7 +34,7 @@
     <v-flex xs2 v-if="!bAuthentication" class="verticalCenter toFlex">
       <v-dialog persistent max-width="600px" v-model="signUpDialog">
         <template v-slot:activator="{ on }">
-          <v-btn text v-on="on" dark>Sign Up</v-btn>
+          <v-btn text v-on="on" dark>회원가입</v-btn>
         </template>
         <v-card>
           <v-card-actions>
@@ -53,20 +53,20 @@
 
     <!--  Sign Out  -->
     <v-flex xs2 v-if="bAuthentication" class="verticalCenter toFlex">
-      <v-btn text dark @click="signOut">Sign Out</v-btn>
+      <v-btn text dark @click="signOut">로그아웃</v-btn>
     </v-flex>
   </v-layout>
 </template>
 
 <script>
-import SearchBar from './SearchBar'
+import SearchBarNav from './SearchBarNav'
 import SignIn from './SignIn'
 import SignUp from './SignUp'
 
 export default {
   name: 'Nav',
   components: {
-    SearchBar,
+    SearchBarNav,
     SignIn,
     SignUp
   },
