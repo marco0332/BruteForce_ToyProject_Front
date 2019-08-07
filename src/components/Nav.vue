@@ -9,7 +9,7 @@
 
     <!-- Search box -->
     <v-flex xs8 class="toFlex">
-      <v-flex class="verticalCenter toFlex">
+      <v-flex v-if="curView !== 'homePage'" class="verticalCenter toFlex">
         <SearchBarNav />
       </v-flex>
     </v-flex>
@@ -62,6 +62,7 @@
 import SearchBarNav from './SearchBarNav'
 import SignIn from './SignIn'
 import SignUp from './SignUp'
+import { mapState } from 'vuex'
 
 export default {
   name: 'Nav',
@@ -78,6 +79,11 @@ export default {
       userName: 'BruteForce',
       userId: '1'
     }
+  },
+  computed: {
+    ...mapState(['curView'])
+  },
+  mounted () {
   },
   methods: {
     signOut () {
@@ -98,7 +104,7 @@ export default {
 }
 
 #Title {
-  font-size: 3vh;
+  font-size: 1.5rem;
 }
 
 .toFlex {
