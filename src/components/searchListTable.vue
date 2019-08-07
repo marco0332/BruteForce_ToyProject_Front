@@ -52,8 +52,7 @@ export default {
   methods: {
     testQuestionList () {
       axios.get('/api/findAllQuestions').then(itemList => {
-        this.questionList = itemList
-        console.log(itemList)
+        this.questionList = itemList.data
       })
     },
     /** Question List를 불러와서 data 변수에 저장하는 메소드 */
