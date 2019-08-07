@@ -1,5 +1,5 @@
 <template>
-    <v-app>
+    <v-app id="searchListPageApp">
         <v-list two-line id="questionVList">
 
             <v-list-item
@@ -34,19 +34,27 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   name: 'searchListTable',
   data () {
     return {
       curPageNum: 1,
-      dataPerPage: 5,
+      dataPerPage: 10,
       questionList: []
     }
   },
   created () {
     this.getQuestionList()
+    // this.testQuestionList()
   },
   methods: {
+    testQuestionList () {
+      axios.get('/api/findAllQuestions').then(itemList => {
+        this.questionList = itemList.data
+      })
+    },
     /** Question List를 불러와서 data 변수에 저장하는 메소드 */
     getQuestionList () {
       this.questionList = [
@@ -448,7 +456,8 @@ export default {
       return Math.ceil(this.questionList.length / this.dataPerPage)
     },
     sliceData () {
-      return this.questionList.slice(this.startOffset, this.endOffset)
+      return this.questionList
+    //   return this.questionList.slice(this.startOffset, this.endOffset)
     }
   }
 }
@@ -458,8 +467,8 @@ export default {
 #questionVList {
   padding: 0;
 }
-.v-pagination__item--active .primary{
-    background-color: #1976d2!important;
-    border: 15px solid black;
+
+#searchListPageApp {
+    background-color: white;
 }
 </style>

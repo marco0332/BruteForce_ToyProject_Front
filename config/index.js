@@ -10,7 +10,15 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+        '/api': {
+            target: 'http://70.12.247.45:8080/api',
+            changeOrigin: true,
+            pathRewrite: {
+                '^/api': ''
+            }
+        }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
@@ -45,10 +53,10 @@ module.exports = {
 
   build: {
     // Template for index.html
-    index: path.resolve(__dirname, '../../bruteforce/src/main/resources/templates/index.html'),
+    index: path.resolve(__dirname, '../../BruteForce_ToyProject_Server/src/main/resources/templates/index.html'),
 
     // Paths
-    assetsRoot: path.resolve(__dirname, '../../bruteforce/src/main/resources/static'),
+    assetsRoot: path.resolve(__dirname, '../../BruteForce_ToyProject_Server/src/main/resources/static'),
     assetsSubDirectory: '',
     assetsPublicPath: '/',
 
