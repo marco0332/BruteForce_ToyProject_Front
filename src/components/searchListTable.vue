@@ -46,8 +46,8 @@ export default {
     }
   },
   created () {
-    // this.getQuestionList()
-    this.testQuestionList()
+    this.getQuestionList()
+    // this.testQuestionList()
   },
   methods: {
     testQuestionList () {
