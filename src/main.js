@@ -7,8 +7,10 @@ import axios from 'axios'
 import vuetify from './plugins/vuetify'
 import 'material-design-icons-iconfont/dist/material-design-icons.css'
 import 'vuetify/dist/vuetify.min.css'
-import 'font-awesome/css/font-awesome.min.css'
 import './assets/css/myGrid.css'
+import { config } from '@fortawesome/fontawesome-svg-core'
+
+config.autoA11y = true
 
 Vue.prototype.$http = axios
 Vue.config.productionTip = false
