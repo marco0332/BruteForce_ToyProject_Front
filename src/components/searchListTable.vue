@@ -1,13 +1,11 @@
 <template>
     <v-app id="searchListPageApp">
-        <v-list two-line id="questionVList">
+        <v-list two-line flat id="questionVList">
 
             <v-list-item class="vListItem"
                 v-for="(item, index) in sliceData"
                 :key="index"
-                @click="goToDetail(item)"
-
-                style="border-bottom:1px solid grey"
+                @click="goToDetail(item.qid)"
             >
                 <div class="stats">
                     <v-flex class="score">
@@ -30,14 +28,16 @@
                         {{tag}}
                     </span>
                 </v-list-item-content>
-                <v-list-item-avatar class="hidden-sm-and-down userIcon" color="indigo">
-                    <v-icon class="empthUser" v-if="item.photoURL === ''" dark>account_circle</v-icon>
-                    <img v-else :src="item.photoURL" :alt="item.writerName">
-                </v-list-item-avatar>
-                <div class="writer hidden-sm-and-down">
-                    <span class="writerName"><v-btn text>{{ item.writerName }}</v-btn></span>
-                    <div class="created_at">{{ item.timestamp }}</div>
-                </div>
+                <v-btn dark class="hidden-sm-and-down userArea" text :to="{name: 'userPage', params: {userId: item.writerUid}}">
+                    <v-list-item-avatar class="userIcon" color="indigo">
+                        <v-icon dark class="empthUser" v-if="item.photoURL === ''">account_circle</v-icon>
+                        <img v-else :src="item.photoURL" :alt="item.writerName">
+                    </v-list-item-avatar>
+                    <div class="writer">
+                        <span class="writerName">{{ item.writerName }}</span>
+                        <div class="created_at">{{ item.timestamp }}</div>
+                    </div>
+                </v-btn>
             </v-list-item>
 
         </v-list>
@@ -54,7 +54,7 @@
 </template>
 
 <script>
-import axios from 'axios'
+import questionService from '../services/question'
 
 export default {
   name: 'searchListTable',
@@ -62,50 +62,38 @@ export default {
     return {
       curPageNum: 1,
       dataPerPage: 10,
-      questionList: [],
-      monthNameDic: {}
+      questionList: []
     }
   },
   created () {
-    this.monthNameDic = this.getMonthName()
     this.getQuestionList()
-    // this.testQuestionList()
-    this.convertToDate()
+    questionService.convertToDate(this.questionList)
+    // questionService.testQuestionList()
   },
   methods: {
+    goToDetail (qid) {
+      this.$router.push('/questionDetailPage/' + qid)
+    },
     testQuestionList () {
-      axios.get('/api/findAllQuestions').then(itemList => {
-        this.questionList = itemList.data
-      })
-    },
-    convertToDate () {
-      this.questionList.forEach(item => {
-        let tmpDate = new Date(item.timestamp).toDateString()
-        let tmpDateSplit = tmpDate.split(' ')
-        const replaceSplit = tmpDate.replace(tmpDateSplit[1], this.monthNameDic[tmpDateSplit[1]]).split(' ')
-        tmpDate = replaceSplit[3] + '년 ' + replaceSplit[1] + ' ' + replaceSplit[2] + '일 '
-        item.timestamp = tmpDate
-      })
-    },
-    getMonthName () {
-      return {
-        'Jan': '01월',
-        'Feb': '02월',
-        'Mar': '03월',
-        'Apr': '04월',
-        'May': '05월',
-        'Jun': '06월',
-        'Jul': '07월',
-        'Aug': '08월',
-        'Sep': '09월',
-        'Oct': '10월',
-        'Nov': '11월',
-        'Dec': '12월'
-      }
+      this.questionList = questionService.findAllQuestions()
+      questionService.convertToDate(this.questionList)
     },
     /** Question List를 불러와서 data 변수에 저장하는 메소드 */
     getQuestionList () {
       this.questionList = [
+        {
+          qid: '1',
+          title: '첫번째 질문이에용',
+          contents: 'Vue.js가 너무 어려워요. 어떻게 하면 잘 할 수 있죠?',
+          writerUid: '1',
+          writerName: 'BruteForce',
+          tag: ['Vue.js', 'Javascript'],
+          bClosed: false,
+          timestamp: new Date().getTime(),
+          score: Number(0),
+          cntAnswer: 1,
+          photoURL: 'https://cdn.vuetifyjs.com/images/john.jpg'
+        },
         {
           qid: '1',
           title: '첫번째 질문이에용',
@@ -550,6 +538,11 @@ export default {
 
 .vListItem {
   padding-left: 0;
+  border-bottom:1px solid grey;
+}
+
+.vListItem:hover {
+  background: rgba(48, 74, 189, 0.17)!important;
 }
 
 #searchListPageApp {
@@ -627,11 +620,25 @@ export default {
   font-size: 0.75em;
 }
 
-.writerName button{
-  padding: 0!important;
+.writerName {
+  color: black!important;
 }
 
 .writerName button{
+  padding: 0!important;
   text-align: left!important;
+}
+
+.userArea {
+  min-height: 72px;
+}
+
+.userArea:hover{
+  background-color: rgba(48, 74, 189, 0.87);
+}
+
+.userArea:hover .created_at, .userArea:hover .writerName {
+  color: white!important;
+  font-weight: bold;
 }
 </style>
