@@ -20,6 +20,37 @@
     justify-content:center;
 }
 
+.verticalEnd {
+    align-items:flex-end;
+    justify-content:end;
+}
+
+.tagList {
+    flex: none;
+    margin: 1.2vh 0.8vw 0 0;
+    padding: 5px 12px;
+    font-size: 0.65rem;
+    font-weight: bold;
+    border-radius: 7px;
+    background-color: rgba(58, 84, 199, 0.17);
+}
+
+.empthUser {
+    font-size: 2.6em;
+}
+
+.tagListDetail {
+    flex: none;
+    display:inline-block;
+    margin: 4px 15px 3px 0!important;
+    padding: 5px 12px;
+    font-size: 0.65rem;
+    font-weight: bold;
+    border-radius: 7px;
+    background-color: rgba(58, 84, 199, 0.87);
+    box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+}
+
 .backColorSetting {
     background: #000428;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */

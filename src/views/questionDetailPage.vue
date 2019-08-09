@@ -1,33 +1,50 @@
 <template>
     <v-app id="questionDetailPageApp">
-        <div>
-            <v-container id="contentsArea">
-
-                <v-layout id="subHeader">
-                    <v-flex row>
-                        <p id="keyword"><span>{{this.questionData.title}}</span></p>
-                    </v-flex>
-                    <v-spacer></v-spacer>
-                    <v-btn class="hidden-sm-and-down" text id="addQuestionBtn" to="/questionDetailPage/1">
-                        <v-icon hidden-sm-and-down>far fa-edit</v-icon>
-                        <span>&nbsp;질문하기</span>
-                    </v-btn>
-                </v-layout>
-
-                <v-layout id="questionMeta">
-                    <span class="subData">질문날짜</span>
-                    <span class="timestamp">{{ this.questionData.timestamp }}</span>
-                </v-layout>
-            </v-container>
+        <div id="titleArea" class="backColorSetting">
+            <v-layout>
+                <v-flex xs3></v-flex>
+                <v-flex xs8 class="verticalEnd toFlex" id="detailTitleArea">
+                    <v-layout column>
+                        <!-- Title -->
+                        <v-layout id="subHeader">
+                            <v-flex row>
+                                <p id="keyword"><span>{{questionData.title}}{{questionData.title}}</span></p>
+                            </v-flex>
+                        </v-layout>
+                        <!-- tag lists -->
+                        <v-layout id="tagArea">
+                            <v-flex>
+                                <p class="tagListDetail"
+                                    v-for="(tag, index) in this.questionData.tag"
+                                    :key="index"
+                                >
+                                    {{tag}}
+                                </p>
+                            </v-flex>
+                        </v-layout>
+                    </v-layout>
+                </v-flex>
+            </v-layout>
         </div>
+        <post :item="this.questionData"/>
+        <!-- <v-container id="contentsArea">
+            <v-layout id="questionMeta">
+                <span class="subData">질문날짜</span>
+                <span class="timestamp">{{ this.questionData.timestamp }}</span>
+            </v-layout>
+        </v-container> -->
     </v-app>
 </template>
 
 <script>
 import questionService from '../services/question'
+import post from '../components/post'
 
 export default {
   name: 'questionDetailPage',
+  components: {
+    post
+  },
   props: {
     qid: { type: String }
   },
@@ -72,7 +89,8 @@ export default {
               timestamp: new Date().getTime(),
               score: Number(0),
               bSelection: false,
-              comments: []
+              comments: [],
+              photoURL: ''
             }
           ],
           comments: [
@@ -98,23 +116,32 @@ export default {
   background-color: white;
 }
 
-#contentsArea {
-  width: 90vw;
-  min-width: 90vw;
+#titleArea {
+  min-height: calc(47vh - 64px);
+  /* max-height: calc(47vh - 64px); */
+  color: white;
+}
+
+#detailTitleArea {
+  min-height: calc(47vh - 64px);
+  margin-bottom: 2vh;
 }
 
 #subHeader {
-  margin: 3vh 0px 1.5vh 0px;
+  margin: 3vh 0px 0.5vh 0px;
+}
+
+#tagArea {
+  margin: 10px 0 5px 0;
 }
 
 #keyword {
   font-size: 1.4em;
-  min-width:106px;
   margin: 0 0 0 10px;
 }
 
 #keyword span {
-  font-size: 1.5rem;
+  font-size: calc(1.96vh + 1.88vw);
 }
 
 #questionMeta{
@@ -131,18 +158,5 @@ export default {
 
 .timestamp {
   font-size: 0.92rem;
-}
-
-#addQuestionBtn {
-  color:#360d7e;
-  border-bottom: 1.2px solid #471e8f;
-}
-
-#addQuestionBtn::before {
-  background-color: white;
-}
-
-#addQuestionBtn:hover {
-  background-color: #0a07d81a;
 }
 </style>

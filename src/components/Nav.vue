@@ -2,7 +2,7 @@
   <v-layout id='Nav' style="z-index: 1;" class="backColorSetting">
     <!-- Logo, Title -->
     <v-flex xs3 class="verticalCenter toFlex">
-      <v-btn text to="/" id="toHomeBtn">
+      <v-btn v-if="curView !== 'homePage'" text to="/" id="toHomeBtn">
         <span id="Title">BRUTE FORCE</span>
       </v-btn>
     </v-flex>
@@ -105,10 +105,6 @@ export default {
 
 #Title {
   font-size: 1.5rem;
-}
-
-.toFlex {
-    display: flex;
 }
 
 .verticalCenter {

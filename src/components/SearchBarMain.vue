@@ -1,12 +1,11 @@
 <template>
     <v-flex>
-        <v-form @submit="mySubmit">
+        <v-form @submit="mySubmit" style="color:white;">
             <v-text-field class="mySearchBoxMain v-input--is-focused"
-                outlined
+                dark
                 append-icon="fa-search"
                 v-model="searchText"
                 hide-details
-                placeholder="검색"
             ></v-text-field>
         </v-form>
     </v-flex>
@@ -38,8 +37,13 @@ export default {
   }
 
   .mySearchBoxMain {
-    background-color: white;
+    /* background-color: white; */
     border-radius: 7px;
-    width: 80vw;
+    width: inherit;
+    font-size: 1.6rem;
+  }
+
+  .mySearchBoxMain .v-text-field__slot {
+    margin-bottom: 2px;
   }
 </style>

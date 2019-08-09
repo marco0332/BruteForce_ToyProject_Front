@@ -597,20 +597,6 @@ export default {
   margin: 5px 5px 5px 0px;
 }
 
-.tagList {
-  flex: none;
-  margin: 1.2vh 0.8vw 0 0;
-  padding: 5px 8px;
-  font-size: 0.65rem;
-  font-weight: bold;
-  border-radius: 7px;
-  background-color: rgba(48, 74, 189, 0.17);
-}
-
-.empthUser {
-  font-size: 2.6em;
-}
-
 .userIcon {
   margin-right: 0.8vw;
 }
