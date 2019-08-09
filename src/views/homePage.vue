@@ -2,8 +2,8 @@
     <div id="homePageApp" class="backColorSetting">
         <v-container fill-height>
             <v-layout class="toFlex">
-                <v-flex xs10 class="toFlex verticalCenter">
-                    <v-layout column>
+                <v-flex xs10 class="toFlex verticalCenter" style="margin:auto">
+                    <v-layout column style="text-align:center;">
                         <span id="mainTitle">
                             BRUTE FORCE
                         </span>

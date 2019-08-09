@@ -4,7 +4,7 @@
 
             <v-layout id="subHeader">
                 <v-flex row>
-                    <p id="keyword">'{{query}}'</p><p>에 대한 검색 결과</p>
+                    <p id="keyword">'{{query}}'</p><p id="resMention">에 대한 검색 결과</p>
                 </v-flex>
                 <v-spacer></v-spacer>
                 <v-btn text id="addQuestionBtn" to="/questionDetailPage/1">
@@ -58,6 +58,11 @@ export default {
   margin: 30px 0px 10px 0px;
 }
 
+#resMention {
+  font-size: 1.1rem;
+  margin: 8px 0 0 5px;
+}
+
 #orderRule {
   margin: 30px 0 0px 0px;
   text-align: right;
@@ -66,7 +71,7 @@ export default {
 #keyword {
   font-weight: bold;
   font-size: 1.9rem;
-  min-width:106px;
+  min-width: inherit;
   margin-left: 10px;
 }
 
