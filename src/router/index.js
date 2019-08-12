@@ -4,6 +4,7 @@ import homePage from '../views/homePage'
 import searchListPage from '../views/searchListPage'
 import userPage from '../views/userPage'
 import questionDetailPage from '../views/questionDetailPage'
+import writeQuestionPage from '../views/writeQuestionPage'
 
 Vue.use(Router)
 
@@ -32,6 +33,12 @@ export default new Router({
       path: '/questionDetailPage/:qId',
       name: 'questionDetailPage',
       component: questionDetailPage,
+      props: true
+    },
+    {
+      path: '/writeQuestion',
+      name: 'writeQuestion',
+      component: writeQuestionPage,
       props: true
     }
   ]

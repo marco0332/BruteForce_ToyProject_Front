@@ -44,7 +44,7 @@ export default {
     return {
       avatarSize: window.innerWidth * 0.09,
       grades: [],
-      colors: [],
+      colors: []
     }
   },
   mounted () {

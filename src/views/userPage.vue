@@ -70,7 +70,7 @@ export default {
       userAnswers: 500,
       userSelections: 30,
       userLikes: 78,
-      userTags: ['python', 'javascript', 'C++', 'vue.js', 'vuetify', 'algorithm', 'spring', 'django'],
+      userTags: ['python', 'javascript', 'C++', 'vue.js', 'vuetify', 'algorithm', 'spring', 'django']
     }
   },
   methods: {

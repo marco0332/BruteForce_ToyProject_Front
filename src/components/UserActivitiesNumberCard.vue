@@ -36,7 +36,7 @@ export default {
       userActivities: [],
       activities: ['QUESTIONS', 'ANSWERS', 'SELECTIONS', 'LIKES'],
       tooltips: ['User\'s Questions Number', 'User\'s Answers Number', 'User\'s Selected Answers Number', 'User\'s Liked Number'],
-      activitiesIcon: ['mdi-help', 'mdi-comment-outline', 'mdi-check', 'mdi-thumb-up-outline'],
+      activitiesIcon: ['mdi-help', 'mdi-comment-outline', 'mdi-check', 'mdi-thumb-up-outline']
     }
   },
   methods: {

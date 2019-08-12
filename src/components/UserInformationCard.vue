@@ -59,7 +59,7 @@ export default {
       currentUserId: '1',
       userEditor: false,
       grades: ['IRON', 'BRONZE', 'SILVER', 'GOLD', 'PLATINUM', 'DIAMOND', 'MASTER', 'CHALLENGER'],
-      colors: ['#4a4433', '#c7a238', '#c7c7c7', '#fae84b', '#3e66f7', '#00fffb', '#a027d9', '#f2273f'],
+      colors: ['#4a4433', '#c7a238', '#c7c7c7', '#fae84b', '#3e66f7', '#00fffb', '#a027d9', '#f2273f']
     }
   },
   methods: {
