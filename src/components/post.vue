@@ -28,8 +28,6 @@
 </template>
 
 <script>
-import $ from 'jquery'
-
 export default {
   name: 'post',
   props: {
@@ -37,7 +35,7 @@ export default {
   },
   data () {
     return {
-      avatarSize: 54
+      avatarSize: window.innerWidth * 0.15
     }
   },
   mounted () {
@@ -45,9 +43,11 @@ export default {
   },
   methods: {
     setAvatarSize () {
-    //   this.avatarSize = $(window).width() * 0.15
-      this.avatarSize = window.screen.width * 0.15
-      console.log(this.avatarSize)
+      window.addEventListener('resize', () => {
+        this.avatarSize = window.innerWidth * 0.15
+      })
+    //   this.avatarSize = window.screen.width * 0.15
+    //   console.log(this.avatarSize)
     }
   }
 }
