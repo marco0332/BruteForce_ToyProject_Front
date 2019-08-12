@@ -26,7 +26,15 @@
                 </v-flex>
             </v-layout>
         </div>
+        <!-- 질문 내용 -->
         <post :item="this.questionData"/>
+        <div class="answerArea">{{questionData.answers.length}} 답변</div>
+        <!-- 답변 내용 -->
+        <div v-for="(item, index) in this.questionData.answers"
+                  :key="index" >
+            <answer :item="item"/>
+            <div class="answerDivideLine"></div>
+        </div>
         <!-- <v-container id="contentsArea">
             <v-layout id="questionMeta">
                 <span class="subData">질문날짜</span>
@@ -39,11 +47,13 @@
 <script>
 import questionService from '../services/question'
 import post from '../components/post'
+import answer from '../components/answer'
 
 export default {
   name: 'questionDetailPage',
   components: {
-    post
+    post,
+    answer
   },
   props: {
     qid: { type: String }
@@ -86,12 +96,40 @@ export default {
 
 데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
 
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!
+
+\`\`\`java
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+\`\`\`
+`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 5,
+            },
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
 어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!`,
               timestamp: new Date().getTime(),
               score: Number(0),
               bSelection: false,
               comments: [],
-              photoURL: ''
+              photoURL: '',
+              writerGrade: 3,
             }
           ],
           comments: [
@@ -111,10 +149,13 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 #questionDetailPageApp {
-  min-height: calc(100vh - 128px);
   background-color: white;
+}
+
+.v-application--wrap {
+  min-height: 0vh;
 }
 
 #titleArea {
@@ -159,5 +200,20 @@ export default {
 
 .timestamp {
   font-size: 0.92rem;
+}
+
+.answerArea {
+  font-size: 1.32rem;
+  width: 89vw;
+  margin: auto;
+  padding-top: 45px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.45);
+}
+
+.answerDivideLine {
+  width: 86vw;
+  margin: auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.24);
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <v-app id="postPage">
+    <v-app id="answerPage">
         <v-layout row ma-0 class="detailArea">
             <!-- profile Area -->
             <v-flex sm3 justify-center hidden-xs-only class="profileArea toFlex">
@@ -11,7 +11,7 @@
                                 color="indigo"
                                 :size="avatarSize"
                             >
-                                <v-icon dark class="emptyUserBigger" v-if="item.photoURL === ''">account_circle</v-icon>
+                                <v-icon class="emptyUserBigger" :size="avatarSize" v-if="item.photoURL === ''">account_circle</v-icon>
                                 <img v-else :src="item.photoURL" :alt="item.writerName">
                             </v-avatar>
                         </v-layout>
@@ -42,7 +42,7 @@ import 'highlight.js/styles/Vs2015.css'
 import Viewer from '@toast-ui/vue-editor/src/Viewer.vue'
 
 export default {
-  name: 'post',
+  name: 'answer',
   props: {
     item: {type: Object}
   },
@@ -76,8 +76,8 @@ export default {
 }
 </script>
 
-<style scoped>
-#postPage {
+<style>
+#answerPage {
   background-color: white;
   margin-top: 25px;
 }

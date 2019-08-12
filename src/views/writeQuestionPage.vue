@@ -1,8 +1,12 @@
 <template>
   <v-app>
     <v-container>
-      <editor :v-model="body" viewer: true></editor>
-      <viewer :value="test"></viewer>
+        <v-flex>
+            <editor v-model="mdText"></editor>
+        </v-flex>
+        <v-flex>
+            <viewer :value="mdText"></viewer>
+        </v-flex>
     </v-container>
   </v-app>
 </template>
@@ -11,7 +15,7 @@
 import 'tui-editor/dist/tui-editor.css'
 import 'tui-editor/dist/tui-editor-contents.css'
 import 'codemirror/lib/codemirror.css'
-import 'highlight.js/styles/github.css'
+import 'highlight.js/styles/Vs2015.css'
 import Viewer from '@toast-ui/vue-editor/src/Viewer.vue'
 import Editor from '@toast-ui/vue-editor/src/Editor.vue'
 
@@ -23,12 +27,20 @@ export default {
   },
   data () {
     return {
-      body: ''
+      mdText: ''
     }
   }
 }
 </script>
 
-<style scoped>
+<style>
+.tui-editor-contents pre {
+  background-color: rgb(30, 30, 30);
+}
 
+.tui-editor-contents pre code {
+  padding: 10px 5px!important;
+  box-shadow: none;
+  color: rgb(220, 220, 220);
+}
 </style>
