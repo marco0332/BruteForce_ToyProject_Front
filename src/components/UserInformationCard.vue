@@ -82,8 +82,4 @@ export default {
     font-family: 'Share Tech Mono', monospace;
     font-size: 1.3rem;
   }
-  .share-font {
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 1rem;
-  }
 </style>

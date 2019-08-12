@@ -2,8 +2,8 @@
     <v-app id="questionDetailPageApp">
         <div id="titleArea" class="backColorSetting">
             <v-layout>
-                <v-flex xs3></v-flex>
-                <v-flex xs8 class="verticalEnd toFlex" id="detailTitleArea">
+                <v-flex sm3></v-flex>
+                <v-flex sm7 class="verticalEnd toFlex" id="detailTitleArea">
                     <v-layout column>
                         <!-- Title -->
                         <v-layout id="subHeader">
@@ -70,7 +70,8 @@ export default {
           title: '첫번째 질문이에용 하하하 그렇다구 합니다',
           contents: 'Vue.js가 너무 어려워요. 어떻게 하면 잘 할 수 있죠?',
           writerUid: '1',
-          writerName: 'BruteForce',
+          writerName: '이기인',
+          writerGrade: 7,
           tag: ['Vue.js', 'Javascript'],
           bClosed: false,
           timestamp: new Date().getTime(),
@@ -124,7 +125,7 @@ export default {
 
 #detailTitleArea {
   min-height: calc(47vh - 64px);
-  margin-bottom: 2vh;
+  margin: 0 0 2vh 4vw;
 }
 
 #subHeader {
