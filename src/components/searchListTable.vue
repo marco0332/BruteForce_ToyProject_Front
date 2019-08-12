@@ -30,7 +30,7 @@
                 </v-list-item-content>
                 <v-btn dark class="hidden-sm-and-down userArea" text :to="{name: 'userPage', params: {userId: item.writerUid}}">
                     <v-list-item-avatar class="userIcon" color="indigo">
-                        <v-icon dark class="empthUser" v-if="item.photoURL === ''">account_circle</v-icon>
+                        <v-icon dark class="emptyUser" v-if="item.photoURL === ''">account_circle</v-icon>
                         <img v-else :src="item.photoURL" :alt="item.writerName">
                     </v-list-item-avatar>
                     <div class="writer">
