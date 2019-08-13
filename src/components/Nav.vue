@@ -28,13 +28,13 @@ export default {
   position: fixed;
   width: 100vw;
   height: 64px;
-  z-index: 1;
+  z-index: 1!important;
 }
 #MobileNav {
   position: fixed;
   width: 100vw;
   height: 64px;
-  z-index: 1;
+  z-index: 1!important;
 }
 @media (max-width: 800px) {
   #DesktopNav{
