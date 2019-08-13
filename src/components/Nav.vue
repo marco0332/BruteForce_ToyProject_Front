@@ -1,5 +1,5 @@
 <template>
-  <v-layout>
+  <div>
     <v-layout id="DesktopNav">
       <DesktopNav></DesktopNav>
     </v-layout>
@@ -7,7 +7,7 @@
     <v-layout id="MobileNav">
       <MobileNav></MobileNav>
     </v-layout>
-  </v-layout>
+  </div>
 </template>
 
 <script>
@@ -41,9 +41,9 @@ export default {
     display: none;
   }
 }
-  @media (min-width: 800px) {
-    #MobileNav {
-      display: none;
-    }
+@media (min-width: 800px) {
+  #MobileNav {
+    display: none;
   }
+}
 </style>
