@@ -1,0 +1,149 @@
+#Title {
+    font-size: 3vh;
+    font-weight: bold;
+    color: white;
+}
+
+#mainTitle {
+    font-size: 5em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: white;
+}
+  
+.toFlex {
+    display: flex;
+}
+  
+.verticalCenter {
+    align-items:center;
+    justify-content:center;
+}
+
+.verticalEnd {
+    align-items:flex-end;
+    justify-content:end;
+}
+
+.tagList {
+    flex: none;
+    margin: 1.2vh 0.8vw 0 0;
+    padding: 5px 12px;
+    font-size: 0.65rem;
+    font-weight: bold;
+    border-radius: 7px;
+    background-color: rgba(58, 84, 199, 0.17);
+}
+
+.emptyUser {
+    font-size: 2.6em;
+}
+
+.emptyUserBigger {
+    /* font-size: 15.5vw!important; */
+    /* font-size: calc(4.5vw + 9vh); */
+    color: white!important;
+}
+
+.tagListDetail {
+    flex: none;
+    display:inline-block;
+    margin: 4px 15px 3px 0!important;
+    padding: 5px 12px;
+    font-size: 0.65rem;
+    font-weight: bold;
+    border-radius: 7px;
+    background-color: rgba(58, 84, 199, 0.87);
+    box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+}
+
+.backColorSetting {
+    background: #000428;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.marginY5 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.marginTop42 {
+    margin-top: 42px;
+}
+  
+.marginTop5 {
+    margin-top: 5px;
+}
+
+.marginTop30 {
+    margin-top: 30px;
+}
+
+.share-font {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1rem;
+}
+
+.userArea {
+    min-height: 40vh;
+}
+  
+.userArea:hover{
+    background-color: rgba(48, 74, 189, 0.87);
+}
+  
+.userArea:hover .created_at, .userArea:hover .writerName {
+    color: white!important;
+    font-weight: bold;
+}
+
+.userAreaDetail {
+    min-height: 40vh;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+  
+.userAreaDetail:hover{
+    background: #000428;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #055daa, #02398a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #055daa, #02398a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+  
+.userAreaDetail:hover .created_at, .userAreaDetail:hover .writerName {
+    color: white!important;
+    font-weight: bold;
+}
+
+.userAreaDetail:hover .gradeChip {
+    box-shadow: 1px 1px 6px white;
+}
+
+.minHeight40vh {
+    min-height: 20vh;
+}
+
+.writerName {
+    font-size: 1.78vw;
+    font-weight: bold;
+}
+  
+.tui-editor-contents {
+    font-size: 1.2em;
+}
+  
+.tui-editor-contents pre {
+    background-color: rgb(30, 30, 30);
+    margin: 0 2vw;
+}
+  
+.tui-editor-contents pre code {
+    padding: 0px!important;
+    box-shadow: none;
+    color: rgb(220, 220, 220);
+    font-size: 1.2em;
+}
+  
+.tui-editor-contents pre code::before {
+    content: ''
+}
