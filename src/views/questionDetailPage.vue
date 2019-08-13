@@ -35,12 +35,6 @@
             <answer :item="item"/>
             <div class="answerDivideLine"></div>
         </div>
-        <!-- <v-container id="contentsArea">
-            <v-layout id="questionMeta">
-                <span class="subData">질문날짜</span>
-                <span class="timestamp">{{ this.questionData.timestamp }}</span>
-            </v-layout>
-        </v-container> -->
     </v-app>
 </template>
 
