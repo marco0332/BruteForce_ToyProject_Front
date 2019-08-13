@@ -1,6 +1,6 @@
 <template>
-  <v-flex class="share-font" wrap xs4.5 style="margin-left: 2%; margin-right: 2%">
-    <v-card outlined class="mx-auto" max-width="500" max-height="300">
+  <v-flex class="share-font" wrap>
+    <v-card outlined class="mx-auto">
       <v-system-bar dark color="cyan darken-1">
         <v-icon>fas fa-keyboard</v-icon>
         <v-spacer></v-spacer>

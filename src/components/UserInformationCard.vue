@@ -1,6 +1,6 @@
 <template>
-  <v-flex xs3 style="margin: 2%; position: fixed">
-    <v-card wrap class="mx-auto" outlined max-width="300">
+  <v-flex >
+    <v-card wrap class="mx-auto" outlined style="margin-bottom: 10%">
       <v-img class="white--text" height="200px" :src="getImageUrl('bruteForce.png')"></v-img>
       <v-card-title>{{ userName }}</v-card-title>
       <v-card-text><v-icon size="17">far fa-envelope</v-icon> {{ userEmail }}<br><v-icon size="17">far fa-address-card</v-icon> {{ userGroup }}</v-card-text>
@@ -59,7 +59,7 @@ export default {
       currentUserId: '1',
       userEditor: false,
       grades: ['IRON', 'BRONZE', 'SILVER', 'GOLD', 'PLATINUM', 'DIAMOND', 'MASTER', 'CHALLENGER'],
-      colors: ['#4a4433', '#c7a238', '#c7c7c7', '#fae84b', '#3e66f7', '#00fffb', '#a027d9', '#f2273f']
+      colors: ['#4a4433', '#c7a238', '#7d7d75', '#adb307', '#3e66f7', '#02a3a6', '#a027d9', '#f2273f']
     }
   },
   methods: {

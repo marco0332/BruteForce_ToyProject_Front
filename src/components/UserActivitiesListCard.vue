@@ -1,5 +1,5 @@
 <template>
-  <v-flex wrap xs9 style="margin-top: 5%" class="mx-auto">
+  <v-flex wrap style="margin-top: 5%" class="mx-auto">
     <v-btn-toggle class="share-font">
       <v-btn color="lime darken-1" dark small @click="selectQuestion">QUESTIONS</v-btn>
       <v-btn color="light-green darken-1" dark small @click="selectAnswer">ANSWERS</v-btn>
@@ -10,9 +10,7 @@
       <v-layout column fill-height>
         <v-list two-line>
           <v-list-item>
-            <v-list-item-icon>
-              <v-icon color="grey lighten-2">mdi-lightbulb-off-outline</v-icon>
-            </v-list-item-icon>
+              <v-icon class="mr-5" color="grey lighten-2">mdi-lightbulb-off-outline</v-icon>
             <v-list-item-content>
               <v-list-item-title>옴뇸뇸</v-list-item-title>
               <v-list-item-subtitle>
@@ -31,9 +29,7 @@
           <v-divider ></v-divider>
 
           <v-list-item>
-            <v-list-item-icon>
-              <v-icon color="yellow darken-2">mdi-lightbulb-on-outline</v-icon>
-            </v-list-item-icon>
+              <v-icon class="mr-5" color="yellow darken-2">mdi-lightbulb-on-outline</v-icon>
             <v-list-item-content>
               <v-list-item-title>길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게</v-list-item-title>
               <v-list-item-subtitle>
@@ -58,9 +54,7 @@
       <v-layout column fill-height>
         <v-list two-line>
           <v-list-item>
-            <v-list-item-icon>
-              <v-icon color="grey lighten-2">mdi-checkbox-blank-outline</v-icon>
-            </v-list-item-icon>
+              <v-icon class="mr-5" color="grey lighten-2">mdi-checkbox-blank-outline</v-icon>
             <v-list-item-content>
               <v-list-item-title>옴뇸뇸</v-list-item-title>
               <v-list-item-subtitle>
@@ -79,9 +73,7 @@
           <v-divider ></v-divider>
 
           <v-list-item>
-            <v-list-item-icon>
-              <v-icon color="green accent-4">mdi-checkbox-marked-outline</v-icon>
-            </v-list-item-icon>
+              <v-icon class="mr-5" color="green accent-4">mdi-checkbox-marked-outline</v-icon>
             <v-list-item-content>
               <v-list-item-title>길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게</v-list-item-title>
               <v-list-item-subtitle>
@@ -106,9 +98,7 @@
       <v-layout column fill-height>
         <v-list two-line>
           <v-list-item>
-            <v-list-item-icon>
-              <v-icon>mdi-format-quote-open</v-icon><v-icon>mdi-format-quote-close</v-icon>
-            </v-list-item-icon>
+              <v-icon class="mr-5">mdi-comment-processing-outline</v-icon>
             <v-list-item-content>
               <v-list-item-title>옴뇸뇸</v-list-item-title>
               <v-list-item-subtitle>아쉬워 벌써 목요일~~ 어떡해 벌써 목요일이야~~~</v-list-item-subtitle>
@@ -121,9 +111,7 @@
           <v-divider ></v-divider>
 
           <v-list-item>
-            <v-list-item-icon>
-              <v-icon>mdi-format-quote-open</v-icon><v-icon>mdi-format-quote-close</v-icon>
-            </v-list-item-icon>
+              <v-icon class="mr-5">mdi-comment-processing-outline</v-icon>
             <v-list-item-content>
               <v-list-item-title>길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게길게</v-list-item-title>
               <v-list-item-subtitle>암오너봍ㅌ 눈에 보이는 사방이 바다야</v-list-item-subtitle>

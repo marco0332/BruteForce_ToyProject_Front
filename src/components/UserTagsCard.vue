@@ -1,6 +1,6 @@
 <template>
-  <v-flex class="share-font" wrap xs4.5 style="margin-left: 2%; margin-right: 2%">
-    <v-card outlined wrap max-width="500" max-height="300" class="mx-auto tag-card">
+  <v-flex class="share-font" wrap>
+    <v-card outlined wrap max-height="300" class="mx-auto tag-card">
       <v-system-bar dark color="light-blue darken-1">
         <v-icon>fas fa-tags</v-icon>
         <v-spacer></v-spacer>

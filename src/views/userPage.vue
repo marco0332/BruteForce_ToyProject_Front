@@ -1,7 +1,9 @@
 <template>
   <v-app>
-    <v-container id="userPageApp" grid-list-md style="height: inherit; margin-top: 2%; margin-bottom: 2%">
-      <v-layout>
+
+    <!--  Desktop View   -->
+    <v-container hidden-sm-and-down id="userPageApp" grid-list-md style="height: inherit; margin-top: 2%; margin-bottom: 2%">
+      <v-layout xs3>
         <!--   User Information Card   -->
         <UserInformationCard
           :userId="userId"
@@ -10,7 +12,7 @@
           :userGroup="userGroup"
           :userInfo="userInfo"
           :userGrade="userGrade"
-          :userForce="userForce"></UserInformationCard>
+          :userForce="userForce" style="margin: 2%; position: fixed; max-width: 300px"></UserInformationCard>
 
         <v-layout xs3></v-layout>
 
@@ -26,7 +28,7 @@
 
           <!--     Tags     -->
           <UserTagsCard
-            :userTags="userTags"></UserTagsCard>
+            :userTags="userTags" style="margin-left: 2%; margin-right: 2%"></UserTagsCard>
         </v-layout>
       </v-layout>
 
@@ -34,8 +36,44 @@
       <v-layout>
         <v-flex xs3 style="margin: 10%"></v-flex>
         <UserActivitiesListCard
-          :userId="userId"></UserActivitiesListCard>
+          :userId="userId" style="margin-left: 2%; margin-right: 2%"></UserActivitiesListCard>
       </v-layout>
+    </v-container>
+
+    <!--  Mobile View  -->
+    <v-container hidden-md-and-up>
+      <v-flex style="margin: 5%">
+        <!--   User Information Card   -->
+        <UserInformationCard
+          :userId="userId"
+          :userName="userName"
+          :userEmail="userEmail"
+          :userGroup="userGroup"
+          :userInfo="userInfo"
+          :userGrade="userGrade"
+          :userForce="userForce" ></UserInformationCard>
+      </v-flex>
+
+      <v-flex style="margin: 5%">
+        <!--   User Activities Number Card  -->
+        <UserActivitiesNumberCard
+          :userQuestions="userQuestions"
+          :userAnswers="userAnswers"
+          :userSelections="userSelections"
+          :userLikes="userLikes"></UserActivitiesNumberCard>
+      </v-flex>
+
+      <v-flex style="margin: 5%">
+        <!--     Tags     -->
+        <UserTagsCard
+          :userTags="userTags"></UserTagsCard>
+      </v-flex>
+
+      <v-flex style="margin: 5%">
+        <!--   Activity List    -->
+        <UserActivitiesListCard
+          :userId="userId"></UserActivitiesListCard>
+      </v-flex>
     </v-container>
   </v-app>
 </template>

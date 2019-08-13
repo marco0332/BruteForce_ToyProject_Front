@@ -1,7 +1,7 @@
 <template>
     <v-flex>
         <v-form @submit="mySubmit" style="color:white">
-            <v-text-field class="mySearchBoxNav v-input--is-focused"
+            <v-text-field id="searchBar" class="mySearchBoxNav v-input--is-focused"
                 dark
                 append-icon="fa-search"
                 v-model="searchText"
@@ -39,8 +39,12 @@ export default {
 
   .mySearchBoxNav {
     border-radius: 7px;
-    width: 50vw;
     margin:0 0 3px 0;
     padding:0;
+  }
+  @media (min-width: 800px) {
+    .mySearchBoxNav {
+      width: 50vw !important;
+    }
   }
 </style>
