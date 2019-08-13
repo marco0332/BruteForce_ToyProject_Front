@@ -32,8 +32,8 @@
             </v-flex>
         </v-layout>
         <!-- Mobile Profile Area -->
-        <v-layout ma-0 class="detailArea">
-            <v-flex sm3 justify-end hidden-sm-and-up class="profileArea toFlex">
+        <v-layout ma-0 hidden-sm-and-up class="detailArea">
+            <v-flex sm3 justify-end class="profileArea toFlex">
                 <v-btn text class="userAreaDetailMobile marginY5">
                     <v-container row>
                         <v-layout justify-center class="">

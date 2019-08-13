@@ -1,5 +1,5 @@
 <template>
-  <v-layout style="z-index: 1;" class="backColorSetting">
+  <v-layout style="z-index: 1" class="backColorSetting">
     <!-- Logo, Title -->
     <v-flex xs3 class="verticalCenter toFlex">
       <v-btn icon dark v-if="curView !== 'homePage'" text to="/" id="toHomeBtn">

@@ -149,7 +149,7 @@ public class Main {
 }
 
 .v-application--wrap {
-  min-height: 0vh;
+  min-height: 0vh!important;
 }
 
 #titleArea {

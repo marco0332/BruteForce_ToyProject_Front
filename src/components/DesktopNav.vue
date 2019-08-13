@@ -44,7 +44,7 @@
           <SignUp @SignUp="signUpDialog = !signUpDialog"></SignUp>
         </v-card>
       </v-dialog>
-    </v-flex>0
+    </v-flex>
 
     <!--  User  -->
     <v-flex xs1 v-if="bAuthentication" class="verticalCenter toFlex">
