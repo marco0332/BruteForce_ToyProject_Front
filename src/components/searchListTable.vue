@@ -92,7 +92,60 @@ export default {
           timestamp: new Date().getTime(),
           score: Number(0),
           cntAnswer: 1,
-          photoURL: 'https://cdn.vuetifyjs.com/images/john.jpg'
+          photoURL: 'https://cdn.vuetifyjs.com/images/john.jpg',
+          answers: [
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!
+
+\`\`\`java
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+\`\`\`
+`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 5
+            },
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 3
+            }
+          ],
+          comments: [
+            {
+              cid: 'comm2',
+              wrtierUid: 'user2',
+              writerName: '김기인',
+              contents: '댓글 테스트 중입니드아요 흐ㅏ하하하',
+              timestamp: new Date().getTime()
+            }]
         },
         {
           qid: '1',
@@ -105,7 +158,60 @@ export default {
           timestamp: new Date().getTime(),
           score: Number(0),
           cntAnswer: 1,
-          photoURL: ''
+          photoURL: '',
+          answers: [
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!
+
+\`\`\`java
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+\`\`\`
+`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 5
+            },
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 3
+            }
+          ],
+          comments: [
+            {
+              cid: 'comm2',
+              wrtierUid: 'user2',
+              writerName: '김기인',
+              contents: '댓글 테스트 중입니드아요 흐ㅏ하하하',
+              timestamp: new Date().getTime()
+            }]
         },
         {
           qid: '2',
@@ -118,7 +224,60 @@ export default {
           timestamp: new Date().getTime(),
           score: Number(0),
           cntAnswer: 4444,
-          photoURL: 'https://cdn.vuetifyjs.com/images/john.jpg'
+          photoURL: 'https://cdn.vuetifyjs.com/images/john.jpg',
+          answers: [
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!
+
+\`\`\`java
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+\`\`\`
+`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 5
+            },
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 3
+            }
+          ],
+          comments: [
+            {
+              cid: 'comm2',
+              wrtierUid: 'user2',
+              writerName: '김기인',
+              contents: '댓글 테스트 중입니드아요 흐ㅏ하하하',
+              timestamp: new Date().getTime()
+            }]
         },
         {
           qid: '1',
@@ -131,7 +290,60 @@ export default {
           timestamp: new Date().getTime(),
           score: Number(0),
           cntAnswer: 1,
-          photoURL: 'https://avatars0.githubusercontent.com/u/9064066?v=4&s=460'
+          photoURL: 'https://avatars0.githubusercontent.com/u/9064066?v=4&s=460',
+          answers: [
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!
+
+\`\`\`java
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+\`\`\`
+`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 5
+            },
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 3
+            }
+          ],
+          comments: [
+            {
+              cid: 'comm2',
+              wrtierUid: 'user2',
+              writerName: '김기인',
+              contents: '댓글 테스트 중입니드아요 흐ㅏ하하하',
+              timestamp: new Date().getTime()
+            }]
         },
         {
           qid: '2',
@@ -144,7 +356,60 @@ export default {
           timestamp: new Date().getTime(),
           score: Number(0),
           cntAnswer: 4,
-          photoURL: ''
+          photoURL: '',
+          answers: [
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!
+
+\`\`\`java
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+\`\`\`
+`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 5
+            },
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 3
+            }
+          ],
+          comments: [
+            {
+              cid: 'comm2',
+              wrtierUid: 'user2',
+              writerName: '김기인',
+              contents: '댓글 테스트 중입니드아요 흐ㅏ하하하',
+              timestamp: new Date().getTime()
+            }]
         },
         {
           qid: '1',
@@ -157,7 +422,60 @@ export default {
           timestamp: new Date().getTime(),
           score: Number(0),
           cntAnswer: 1,
-          photoURL: ''
+          photoURL: '',
+          answers: [
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!
+
+\`\`\`java
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+\`\`\`
+`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 5
+            },
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 3
+            }
+          ],
+          comments: [
+            {
+              cid: 'comm2',
+              wrtierUid: 'user2',
+              writerName: '김기인',
+              contents: '댓글 테스트 중입니드아요 흐ㅏ하하하',
+              timestamp: new Date().getTime()
+            }]
         },
         {
           qid: '2',
@@ -170,7 +488,60 @@ export default {
           timestamp: new Date().getTime(),
           score: Number(0),
           cntAnswer: 4,
-          photoURL: ''
+          photoURL: '',
+          answers: [
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!
+
+\`\`\`java
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+\`\`\`
+`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 5
+            },
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 3
+            }
+          ],
+          comments: [
+            {
+              cid: 'comm2',
+              wrtierUid: 'user2',
+              writerName: '김기인',
+              contents: '댓글 테스트 중입니드아요 흐ㅏ하하하',
+              timestamp: new Date().getTime()
+            }]
         },
         {
           qid: '1',
@@ -183,7 +554,60 @@ export default {
           timestamp: new Date().getTime(),
           score: Number(0),
           cntAnswer: 1,
-          photoURL: ''
+          photoURL: '',
+          answers: [
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!
+
+\`\`\`java
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+\`\`\`
+`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 5
+            },
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 3
+            }
+          ],
+          comments: [
+            {
+              cid: 'comm2',
+              wrtierUid: 'user2',
+              writerName: '김기인',
+              contents: '댓글 테스트 중입니드아요 흐ㅏ하하하',
+              timestamp: new Date().getTime()
+            }]
         },
         {
           qid: '2',
@@ -196,7 +620,60 @@ export default {
           timestamp: new Date().getTime(),
           score: Number(0),
           cntAnswer: 4,
-          photoURL: ''
+          photoURL: '',
+          answers: [
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!
+
+\`\`\`java
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+\`\`\`
+`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 5
+            },
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 3
+            }
+          ],
+          comments: [
+            {
+              cid: 'comm2',
+              wrtierUid: 'user2',
+              writerName: '김기인',
+              contents: '댓글 테스트 중입니드아요 흐ㅏ하하하',
+              timestamp: new Date().getTime()
+            }]
         },
         {
           qid: '1',
@@ -209,7 +686,60 @@ export default {
           timestamp: new Date().getTime(),
           score: Number(0),
           cntAnswer: 1,
-          photoURL: ''
+          photoURL: '',
+          answers: [
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!
+
+\`\`\`java
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+\`\`\`
+`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 5
+            },
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 3
+            }
+          ],
+          comments: [
+            {
+              cid: 'comm2',
+              wrtierUid: 'user2',
+              writerName: '김기인',
+              contents: '댓글 테스트 중입니드아요 흐ㅏ하하하',
+              timestamp: new Date().getTime()
+            }]
         },
         {
           qid: '2',
@@ -222,7 +752,60 @@ export default {
           timestamp: new Date().getTime(),
           score: Number(0),
           cntAnswer: 4,
-          photoURL: ''
+          photoURL: '',
+          answers: [
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!
+
+\`\`\`java
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+\`\`\`
+`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 5
+            },
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 3
+            }
+          ],
+          comments: [
+            {
+              cid: 'comm2',
+              wrtierUid: 'user2',
+              writerName: '김기인',
+              contents: '댓글 테스트 중입니드아요 흐ㅏ하하하',
+              timestamp: new Date().getTime()
+            }]
         },
         {
           qid: '1',
@@ -235,7 +818,60 @@ export default {
           timestamp: new Date().getTime(),
           score: Number(0),
           cntAnswer: 1,
-          photoURL: ''
+          photoURL: '',
+          answers: [
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!
+
+\`\`\`java
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+\`\`\`
+`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 5
+            },
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 3
+            }
+          ],
+          comments: [
+            {
+              cid: 'comm2',
+              wrtierUid: 'user2',
+              writerName: '김기인',
+              contents: '댓글 테스트 중입니드아요 흐ㅏ하하하',
+              timestamp: new Date().getTime()
+            }]
         },
         {
           qid: '2',
@@ -248,7 +884,60 @@ export default {
           timestamp: new Date().getTime(),
           score: Number(0),
           cntAnswer: 4,
-          photoURL: ''
+          photoURL: '',
+          answers: [
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!
+
+\`\`\`java
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+\`\`\`
+`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 5
+            },
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 3
+            }
+          ],
+          comments: [
+            {
+              cid: 'comm2',
+              wrtierUid: 'user2',
+              writerName: '김기인',
+              contents: '댓글 테스트 중입니드아요 흐ㅏ하하하',
+              timestamp: new Date().getTime()
+            }]
         },
         {
           qid: '1',
@@ -261,7 +950,60 @@ export default {
           timestamp: new Date().getTime(),
           score: Number(0),
           cntAnswer: 1,
-          photoURL: ''
+          photoURL: '',
+          answers: [
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!
+
+\`\`\`java
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+\`\`\`
+`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 5
+            },
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 3
+            }
+          ],
+          comments: [
+            {
+              cid: 'comm2',
+              wrtierUid: 'user2',
+              writerName: '김기인',
+              contents: '댓글 테스트 중입니드아요 흐ㅏ하하하',
+              timestamp: new Date().getTime()
+            }]
         },
         {
           qid: '2',
@@ -274,7 +1016,60 @@ export default {
           timestamp: new Date().getTime(),
           score: Number(0),
           cntAnswer: 4,
-          photoURL: ''
+          photoURL: '',
+          answers: [
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!
+
+\`\`\`java
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+\`\`\`
+`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 5
+            },
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 3
+            }
+          ],
+          comments: [
+            {
+              cid: 'comm2',
+              wrtierUid: 'user2',
+              writerName: '김기인',
+              contents: '댓글 테스트 중입니드아요 흐ㅏ하하하',
+              timestamp: new Date().getTime()
+            }]
         },
         {
           qid: '1',
@@ -287,7 +1082,60 @@ export default {
           timestamp: new Date().getTime(),
           score: Number(0),
           cntAnswer: 1,
-          photoURL: ''
+          photoURL: '',
+          answers: [
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!
+
+\`\`\`java
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+\`\`\`
+`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 5
+            },
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 3
+            }
+          ],
+          comments: [
+            {
+              cid: 'comm2',
+              wrtierUid: 'user2',
+              writerName: '김기인',
+              contents: '댓글 테스트 중입니드아요 흐ㅏ하하하',
+              timestamp: new Date().getTime()
+            }]
         },
         {
           qid: '2',
@@ -300,7 +1148,60 @@ export default {
           timestamp: new Date().getTime(),
           score: Number(0),
           cntAnswer: 4,
-          photoURL: ''
+          photoURL: '',
+          answers: [
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!
+
+\`\`\`java
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+\`\`\`
+`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 5
+            },
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 3
+            }
+          ],
+          comments: [
+            {
+              cid: 'comm2',
+              wrtierUid: 'user2',
+              writerName: '김기인',
+              contents: '댓글 테스트 중입니드아요 흐ㅏ하하하',
+              timestamp: new Date().getTime()
+            }]
         },
         {
           qid: '1',
@@ -313,7 +1214,60 @@ export default {
           timestamp: new Date().getTime(),
           score: Number(0),
           cntAnswer: 1,
-          photoURL: ''
+          photoURL: '',
+          answers: [
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!
+
+\`\`\`java
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+\`\`\`
+`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 5
+            },
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 3
+            }
+          ],
+          comments: [
+            {
+              cid: 'comm2',
+              wrtierUid: 'user2',
+              writerName: '김기인',
+              contents: '댓글 테스트 중입니드아요 흐ㅏ하하하',
+              timestamp: new Date().getTime()
+            }]
         },
         {
           qid: '2',
@@ -326,7 +1280,60 @@ export default {
           timestamp: new Date().getTime(),
           score: Number(0),
           cntAnswer: 4,
-          photoURL: ''
+          photoURL: '',
+          answers: [
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!
+
+\`\`\`java
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+\`\`\`
+`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 5
+            },
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 3
+            }
+          ],
+          comments: [
+            {
+              cid: 'comm2',
+              wrtierUid: 'user2',
+              writerName: '김기인',
+              contents: '댓글 테스트 중입니드아요 흐ㅏ하하하',
+              timestamp: new Date().getTime()
+            }]
         },
         {
           qid: '1',
@@ -339,7 +1346,60 @@ export default {
           timestamp: new Date().getTime(),
           score: Number(0),
           cntAnswer: 1,
-          photoURL: ''
+          photoURL: '',
+          answers: [
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!
+
+\`\`\`java
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+\`\`\`
+`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 5
+            },
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 3
+            }
+          ],
+          comments: [
+            {
+              cid: 'comm2',
+              wrtierUid: 'user2',
+              writerName: '김기인',
+              contents: '댓글 테스트 중입니드아요 흐ㅏ하하하',
+              timestamp: new Date().getTime()
+            }]
         },
         {
           qid: '2',
@@ -352,7 +1412,60 @@ export default {
           timestamp: new Date().getTime(),
           score: Number(0),
           cntAnswer: 4,
-          photoURL: ''
+          photoURL: '',
+          answers: [
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!
+
+\`\`\`java
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+\`\`\`
+`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 5
+            },
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 3
+            }
+          ],
+          comments: [
+            {
+              cid: 'comm2',
+              wrtierUid: 'user2',
+              writerName: '김기인',
+              contents: '댓글 테스트 중입니드아요 흐ㅏ하하하',
+              timestamp: new Date().getTime()
+            }]
         },
         {
           qid: '1',
@@ -365,7 +1478,60 @@ export default {
           timestamp: new Date().getTime(),
           score: Number(0),
           cntAnswer: 1,
-          photoURL: ''
+          photoURL: '',
+          answers: [
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!
+
+\`\`\`java
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+\`\`\`
+`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 5
+            },
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 3
+            }
+          ],
+          comments: [
+            {
+              cid: 'comm2',
+              wrtierUid: 'user2',
+              writerName: '김기인',
+              contents: '댓글 테스트 중입니드아요 흐ㅏ하하하',
+              timestamp: new Date().getTime()
+            }]
         },
         {
           qid: '2',
@@ -378,7 +1544,60 @@ export default {
           timestamp: new Date().getTime(),
           score: Number(0),
           cntAnswer: 4,
-          photoURL: ''
+          photoURL: '',
+          answers: [
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!
+
+\`\`\`java
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+\`\`\`
+`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 5
+            },
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 3
+            }
+          ],
+          comments: [
+            {
+              cid: 'comm2',
+              wrtierUid: 'user2',
+              writerName: '김기인',
+              contents: '댓글 테스트 중입니드아요 흐ㅏ하하하',
+              timestamp: new Date().getTime()
+            }]
         },
         {
           qid: '1',
@@ -391,7 +1610,60 @@ export default {
           timestamp: new Date().getTime(),
           score: Number(0),
           cntAnswer: 1,
-          photoURL: ''
+          photoURL: '',
+          answers: [
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!
+
+\`\`\`java
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+\`\`\`
+`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 5
+            },
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 3
+            }
+          ],
+          comments: [
+            {
+              cid: 'comm2',
+              wrtierUid: 'user2',
+              writerName: '김기인',
+              contents: '댓글 테스트 중입니드아요 흐ㅏ하하하',
+              timestamp: new Date().getTime()
+            }]
         },
         {
           qid: '2',
@@ -404,7 +1676,60 @@ export default {
           timestamp: new Date().getTime(),
           score: Number(0),
           cntAnswer: 4,
-          photoURL: ''
+          photoURL: '',
+          answers: [
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!
+
+\`\`\`java
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+\`\`\`
+`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 5
+            },
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 3
+            }
+          ],
+          comments: [
+            {
+              cid: 'comm2',
+              wrtierUid: 'user2',
+              writerName: '김기인',
+              contents: '댓글 테스트 중입니드아요 흐ㅏ하하하',
+              timestamp: new Date().getTime()
+            }]
         },
         {
           qid: '1',
@@ -417,7 +1742,60 @@ export default {
           timestamp: new Date().getTime(),
           score: Number(0),
           cntAnswer: 1,
-          photoURL: ''
+          photoURL: '',
+          answers: [
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!
+
+\`\`\`java
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+\`\`\`
+`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 5
+            },
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 3
+            }
+          ],
+          comments: [
+            {
+              cid: 'comm2',
+              wrtierUid: 'user2',
+              writerName: '김기인',
+              contents: '댓글 테스트 중입니드아요 흐ㅏ하하하',
+              timestamp: new Date().getTime()
+            }]
         },
         {
           qid: '2',
@@ -430,7 +1808,60 @@ export default {
           timestamp: new Date().getTime(),
           score: Number(0),
           cntAnswer: 4,
-          photoURL: ''
+          photoURL: '',
+          answers: [
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!
+
+\`\`\`java
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+\`\`\`
+`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 5
+            },
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 3
+            }
+          ],
+          comments: [
+            {
+              cid: 'comm2',
+              wrtierUid: 'user2',
+              writerName: '김기인',
+              contents: '댓글 테스트 중입니드아요 흐ㅏ하하하',
+              timestamp: new Date().getTime()
+            }]
         },
         {
           qid: '1',
@@ -443,7 +1874,60 @@ export default {
           timestamp: new Date().getTime(),
           score: Number(0),
           cntAnswer: 1,
-          photoURL: ''
+          photoURL: '',
+          answers: [
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!
+
+\`\`\`java
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+\`\`\`
+`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 5
+            },
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 3
+            }
+          ],
+          comments: [
+            {
+              cid: 'comm2',
+              wrtierUid: 'user2',
+              writerName: '김기인',
+              contents: '댓글 테스트 중입니드아요 흐ㅏ하하하',
+              timestamp: new Date().getTime()
+            }]
         },
         {
           qid: '2',
@@ -456,7 +1940,60 @@ export default {
           timestamp: new Date().getTime(),
           score: Number(0),
           cntAnswer: 4,
-          photoURL: ''
+          photoURL: '',
+          answers: [
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!
+
+\`\`\`java
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+\`\`\`
+`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 5
+            },
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 3
+            }
+          ],
+          comments: [
+            {
+              cid: 'comm2',
+              wrtierUid: 'user2',
+              writerName: '김기인',
+              contents: '댓글 테스트 중입니드아요 흐ㅏ하하하',
+              timestamp: new Date().getTime()
+            }]
         },
         {
           qid: '1',
@@ -469,7 +2006,60 @@ export default {
           timestamp: new Date().getTime(),
           score: Number(0),
           cntAnswer: 1,
-          photoURL: ''
+          photoURL: '',
+          answers: [
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!
+
+\`\`\`java
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+\`\`\`
+`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 5
+            },
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 3
+            }
+          ],
+          comments: [
+            {
+              cid: 'comm2',
+              wrtierUid: 'user2',
+              writerName: '김기인',
+              contents: '댓글 테스트 중입니드아요 흐ㅏ하하하',
+              timestamp: new Date().getTime()
+            }]
         },
         {
           qid: '2',
@@ -482,7 +2072,60 @@ export default {
           timestamp: new Date().getTime(),
           score: Number(0),
           cntAnswer: 4,
-          photoURL: ''
+          photoURL: '',
+          answers: [
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!
+
+\`\`\`java
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+\`\`\`
+`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 5,
+            },
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 3,
+            }
+          ],
+          comments: [
+            {
+              cid: 'comm2',
+              wrtierUid: 'user2',
+              writerName: '김기인',
+              contents: '댓글 테스트 중입니드아요 흐ㅏ하하하',
+              timestamp: new Date().getTime()
+            }]
         },
         {
           qid: '1',
@@ -495,7 +2138,60 @@ export default {
           timestamp: new Date().getTime(),
           score: Number(0),
           cntAnswer: 1,
-          photoURL: ''
+          photoURL: '',
+          answers: [
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!
+
+\`\`\`java
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+\`\`\`
+`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 5,
+            },
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 3,
+            }
+          ],
+          comments: [
+            {
+              cid: 'comm2',
+              wrtierUid: 'user2',
+              writerName: '김기인',
+              contents: '댓글 테스트 중입니드아요 흐ㅏ하하하',
+              timestamp: new Date().getTime()
+            }]
         },
         {
           qid: '2',
@@ -508,7 +2204,60 @@ export default {
           timestamp: new Date().getTime(),
           score: Number(0),
           cntAnswer: 4,
-          photoURL: ''
+          photoURL: '',
+          answers: [
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!
+
+\`\`\`java
+import java.io.*;
+
+public class Main {
+    public static void main(String[] args){
+        System.out.println("Hello World");
+    }
+}
+\`\`\`
+`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 5,
+            },
+            {
+              aid: 'ans1',
+              writerUid: 'user1',
+              writerName: '일유저',
+              contents: `먼저 Vue.js는 기본적으로 RESTFUL APU로 작동합니다.
+
+데이터를 주고받는 형식으로 JSON 형식을 사용하며, 따라서 데이터를 받았을 때 동작할 수 있게끔 페이지 디자인을 구성해야합니다.
+
+어떤 서버 기반으로 Vue.js를 구현하실지는 모르겠지만, Vue.js의 기본 문법와 그 이론을 공부하시면 좋을 것 같아요. 그리고 Vuetify라는 API를 사용하면 디자인을 구성하기가 훨씬 용이합니다. 자주 사용하는 태그들이 이미 어느정도 틀이 갖추어진 내용물로 바로 출력 가능하거든요!`,
+              timestamp: new Date().getTime(),
+              score: Number(0),
+              bSelection: false,
+              comments: [],
+              photoURL: '',
+              writerGrade: 3,
+            }
+          ],
+          comments: [
+            {
+              cid: 'comm2',
+              wrtierUid: 'user2',
+              writerName: '김기인',
+              contents: '댓글 테스트 중입니드아요 흐ㅏ하하하',
+              timestamp: new Date().getTime()
+            }]
         }
       ]
     }

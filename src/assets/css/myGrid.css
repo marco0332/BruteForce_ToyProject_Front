@@ -40,7 +40,9 @@
 }
 
 .emptyUserBigger {
-    font-size: 15.5vw!important;
+    /* font-size: 15.5vw!important; */
+    /* font-size: calc(4.5vw + 9vh); */
+    color: white!important;
 }
 
 .tagListDetail {
@@ -59,6 +61,11 @@
     background: #000428;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.marginY5 {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .marginTop42 {
@@ -110,4 +117,33 @@
 
 .userAreaDetail:hover .gradeChip {
     box-shadow: 1px 1px 6px white;
+}
+
+.minHeight40vh {
+    min-height: 20vh;
+}
+
+.writerName {
+    font-size: 1.78vw;
+    font-weight: bold;
+}
+  
+.tui-editor-contents {
+    font-size: 1.2em;
+}
+  
+.tui-editor-contents pre {
+    background-color: rgb(30, 30, 30);
+    margin: 0 2vw;
+}
+  
+.tui-editor-contents pre code {
+    padding: 0px!important;
+    box-shadow: none;
+    color: rgb(220, 220, 220);
+    font-size: 1.2em;
+}
+  
+.tui-editor-contents pre code::before {
+    content: ''
 }
